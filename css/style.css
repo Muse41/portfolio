@@ -1,4 +1,4 @@
-#wrap{
+.inner_work{
     max-width:1550px;
     margin:0 auto;
     position:relative;
@@ -16,9 +16,10 @@
 }
 .gnb li{
     margin-bottom: 5px;
+    color:#fff;
 }
 .gnb li:hover a{
-    color: rgb(1, 156, 217);  
+    color: rgb(8, 171, 235);
 }
 .gnb li.active a{
     color: rgb(8, 171, 235);
@@ -26,21 +27,91 @@
 
 /* **********내비*********** */
 
+.a1{
+    padding:0 20px;
+}
+.lazy{
+    margin-bottom: 170px;
+}
+
+.slick-arrow{    
+    font-size:0;
+    width:30px;
+    height:30px;
+    border:none;    
+    z-index:99;  
+}
+.slick-prev{
+    background: url('/img/noun-angle-left-2437910.png') no-repeat;
+    background-size: contain;
+    position:absolute;
+    top:150px;
+    left:550px;       
+}
+.slick-next{
+    background: url('/img/noun-angle-right-2437909.png') no-repeat;
+    background-size: contain;
+    position:absolute;
+    top:150px;
+    left:590px; 
+}
+
+.slick-dots{
+    position: absolute;
+    top:100px;
+    left:566px;  
+    display:flex;    
+}
+.slick-dots li button{
+    margin-right: 16px;
+    border:none;   
+    font-weight: 300;
+    color:#666;
+}
+.slick-dots li.slick-active button{
+    color: #1d64c0;
+    border-bottom: 1px solid #1d64c0;
+}
+
+
+
 #intro{
-    padding-top:200px;
-    padding-bottom: 140px; 
-    display:flex;
-    justify-content: space-around;  
+    position:relative;
+}
+
+#intro .box{
+    width:100%;
+    height:80vh;
+    overflow:hidden;
+    background: url('/img/intro1.jpg') no-repeat; 
+    background-size:cover;
+    /* background-position: center top; */
+}
+
+#intro .background{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: rgba(56, 55, 55, 0.3);
+}
+#intro .txt_box{
+    position:absolute;
+    top:220px;
+    color:#fff;
+    left:50%;            
+    transform: translate(-50%);
 }
 #intro h1{
     font-size:4rem;
     transition: 0.4s;
     position:relative;
     width:480px;
+    margin:auto;
+    margin-bottom: 30px;
 }
 #intro h1::after{
     content: "";
-    background-color:rgb(5, 142, 228);   
+    background-color:rgb(250, 226, 71);   
     position: absolute;
     display: block;
     width: 0px;
@@ -50,60 +121,23 @@
     transition-duration: 0.4s;
 }
 #intro h1:hover{
-   color: rgb(6, 132, 210);   
+   color: rgb(250, 226, 71);   
 }
 #intro h1:hover::after{
     width: 480px;
 }
 #intro .txt{
     font-size:1.2rem;
-    margin-top:30px;
     padding-left:5px;
     width:460px;
+    margin:auto;
 }
 #intro .txt b{
     font-size:1.4rem;
-    color:rgb(5, 142, 228)
+    color:rgb(250, 226, 71); 
 }
-.program_box{
-    margin-top:50px;
-    width:400px;
-}
-.program_box p{
-    margin:6px;
-    display:inline-block;    
-    padding:3px 15px;
-    border-radius:30px;
-    color: #444;
-}
-.program_box p:first-child, .program_box .p5{
-    margin-left:0;   /*5번째 왼쪽마진도 없애 왼쪽에 붙여 정렬함*/
-}
-   /*~~!?? 야들 두줄로 어떻게 만들까~~??!
-   A: box에 플렉스 없애고, box p에 inline-block주고
-   box에 다시 width줘서 내려오게 함*/
-.p1{background-color: rgba(172, 248, 248, 0.2);}
-.p2{background-color: rgba(172, 248, 248, 0.2);}
-.p3{background-color: rgba(172, 248, 248, 0.2);}
-.p4{background-color: rgba(172, 248, 248, 0.2);}
-.p5{background-color: rgba(172, 248, 248, 0.2);}
-.p6{background-color: rgba(172, 248, 248, 0.2);}
 
-#intro .bg_box{   
-    background-color: rgb(192, 236, 254);
-    width:450px;
-    height:460px;
-    position:relative;
-}
-#intro .bg_box p{
-    position:absolute;
-    top:57px;
-    right:-50px;
-    width:330px;
-}
-#intro .bg_box p img{
-    width:100%;
-}
+
 
 /* *******************intro*********************** */
 
@@ -111,7 +145,7 @@
     padding-top:150px;
 }
 #work article{
-    margin-bottom: 170px;
+    margin-bottom: 10px;
 }
 #work article.a4{
     margin-bottom: 0px;
@@ -223,8 +257,7 @@ article.a3 .img_box{
 }
 
 .a1 .img_box{
-   /* border:1px solid #ddd; */
-   box-shadow: 2px 2px 5px 0px;
+   box-shadow: 2px 2px 4px 0px;
 }
 
 /***********work 사이트 작업********************/
@@ -418,12 +451,15 @@ article.a3 .img_box{
 #contact{
     padding-top:250px;
     padding-bottom: 120px;
+    
 }
 #contact .inner{
+    margin-bottom: 100px;
+}
+#contact .inner .wrap{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 100px;
 }
 #contact h2{
     font-size:2rem;
@@ -505,3 +541,5 @@ article.a3 .img_box{
 .mail_wrap{
     margin-top:-40px;
 }
+
+

@@ -25,7 +25,14 @@ $(document).ready(function() {//실행틀 시작
           $(window).scroll(function(){
           //.scrollTop()은 선택한 요소의 스크롤바 수직 위치를 반환하거나 스크롤바 수직 위치를 정합니다.
           var location = $(window).scrollTop();
-          
+
+          if(location > 0){
+            menu.css('color','#fff')
+          }
+          if(location > 640){
+            menu.css('color','#444')
+          }
+
           content.each(function() {
               //반복문(each)
         var tg = $(this);
@@ -40,4 +47,14 @@ $(document).ready(function() {//실행틀 시작
           
               
               });//scroll() 끝
+
+
+              $(".lazy").slick({ //클래쓰 lazy slider와 div태그만 충족하면 작동함
+                lazyLoad: 'ondemand', // ondemand progressive anticipated
+                infinite: true,
+                dots : true,
+                speed:500,
+              });
+
+
   });//실행틀 끝
