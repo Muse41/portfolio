@@ -1,0 +1,507 @@
+#wrap{
+    max-width:1550px;
+    margin:0 auto;
+    position:relative;
+}
+.inner{
+    max-width:1440px;
+    margin:0 auto;
+}
+
+#nav{
+    position: fixed;
+    right:20px;
+    top:50px;
+    z-index:9999;
+}
+.gnb li{
+    margin-bottom: 5px;
+}
+.gnb li:hover a{
+    color: rgb(1, 156, 217);  
+}
+.gnb li.active a{
+    color: rgb(8, 171, 235);
+}
+
+/* **********내비*********** */
+
+#intro{
+    padding-top:200px;
+    padding-bottom: 140px; 
+    display:flex;
+    justify-content: space-around;  
+}
+#intro h1{
+    font-size:4rem;
+    transition: 0.4s;
+    position:relative;
+    width:480px;
+}
+#intro h1::after{
+    content: "";
+    background-color:rgb(5, 142, 228);   
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 2px;
+    bottom: -10px;   
+    z-index: 999;
+    transition-duration: 0.4s;
+}
+#intro h1:hover{
+   color: rgb(6, 132, 210);   
+}
+#intro h1:hover::after{
+    width: 480px;
+}
+#intro .txt{
+    font-size:1.2rem;
+    margin-top:30px;
+    padding-left:5px;
+    width:460px;
+}
+#intro .txt b{
+    font-size:1.4rem;
+    color:rgb(5, 142, 228)
+}
+.program_box{
+    margin-top:50px;
+    width:400px;
+}
+.program_box p{
+    margin:6px;
+    display:inline-block;    
+    padding:3px 15px;
+    border-radius:30px;
+    color: #444;
+}
+.program_box p:first-child, .program_box .p5{
+    margin-left:0;   /*5번째 왼쪽마진도 없애 왼쪽에 붙여 정렬함*/
+}
+   /*~~!?? 야들 두줄로 어떻게 만들까~~??!
+   A: box에 플렉스 없애고, box p에 inline-block주고
+   box에 다시 width줘서 내려오게 함*/
+.p1{background-color: rgba(172, 248, 248, 0.2);}
+.p2{background-color: rgba(172, 248, 248, 0.2);}
+.p3{background-color: rgba(172, 248, 248, 0.2);}
+.p4{background-color: rgba(172, 248, 248, 0.2);}
+.p5{background-color: rgba(172, 248, 248, 0.2);}
+.p6{background-color: rgba(172, 248, 248, 0.2);}
+
+#intro .bg_box{   
+    background-color: rgb(192, 236, 254);
+    width:450px;
+    height:460px;
+    position:relative;
+}
+#intro .bg_box p{
+    position:absolute;
+    top:57px;
+    right:-50px;
+    width:330px;
+}
+#intro .bg_box p img{
+    width:100%;
+}
+
+/* *******************intro*********************** */
+
+#work{
+    padding-top:150px;
+}
+#work article{
+    margin-bottom: 170px;
+}
+#work article.a4{
+    margin-bottom: 0px;
+}
+.big_tit{
+    display:flex;
+    margin-bottom: 70px;
+    position:relative;
+}
+.big_tit .dot{
+    position:absolute;
+    right:100px;
+    top:120px;
+    letter-spacing: 0.7em;
+}
+.big_tit .paser{
+    position:absolute;
+    right:95px;
+    top:160px;
+    letter-spacing: 0.5em;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.big_tit .num{
+    font-size:5rem;
+    font-weight: 400;
+    color:rgba(56, 55, 55, 0.1);
+}
+.big_tit .txt{
+    position:absolute;
+    top:60px;  left:100px;
+    font-size:2.3rem;
+    font-weight:500;
+    color:#444;
+    line-height: 2.7rem;
+}
+.big_tit .txt b{
+    display:block;
+    font-weight:500;
+}
+#work .a1 .a1_wrap{
+    position:relative;
+    width:calc(100% - 800px);
+}
+#work .txt_box{
+    width:425px;    
+    position:absolute;
+    right:100px;
+    bottom:80px;
+    text-align: right;
+}
+.work_percent{
+    margin-bottom: 30px;
+}
+.work_percent span{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color:#565656;
+}
+#work .txt_box .tit{
+    font-weight: 500;
+    font-size:1.2rem;
+    margin-bottom: 15px;
+    color:#565656;
+}
+#work .txt_box .txt{
+    margin-bottom: 20px;
+}
+#work .txt_box .more{
+    background-color: rgb(249, 250, 250);
+    padding:9px 20px;
+    display:inline-block;
+    position: absolute;
+    right:0;
+    border:1px solid #999;
+    border-radius: 30px;
+    color:#666766;
+    font-size:0.94rem;  
+}
+#work .txt_box .more:hover{
+    background-color: rgb(57, 183, 233);
+    border:none;
+    transition:0.2s;   
+    color:#fff;
+}
+
+article .img_box{
+    width:800px;
+}
+article.a3 .img_box{
+    width:480px;
+}
+
+.img_box img{
+    width:100%;
+}
+.a1, .a2, .a3{
+    display:flex;
+    justify-content: space-between;
+}
+
+.a2 .img_box{
+    margin-top:-40px;
+}
+.a3 .img_box{
+    margin-top: -40px;
+    padding-right:50px;
+}
+
+.a1 .img_box{
+   /* border:1px solid #ddd; */
+   box-shadow: 2px 2px 5px 0px;
+}
+
+/***********work 사이트 작업********************/
+
+
+.banner_box{
+    display:flex;
+    justify-content: center;
+}
+.banner_box p{
+    width:350px;
+    margin-bottom: 50px;
+}
+.banner_box p img{
+    width:100%;
+}
+.banner_box .col1{
+    margin:40px 60px 0 60px;
+}
+.banner_box .col2{
+    margin:130px 0 0 40px;
+}
+.banner_box .last5{
+    margin-top:70px;
+}
+.dg_tit{
+    margin-top:80px;
+    margin-left:65px;
+    font-weight: 400;
+}
+
+.hover1{
+    position:relative;     
+    cursor: pointer;
+    transition:0.3s; 
+}
+.hover1 .txt_hover1{
+    width:215px;
+    position:absolute;
+    top:31%; left:17%;     
+    opacity: 0%;
+    font-weight: 400;
+    color:#000;
+    transition:0.3s;  
+ }
+ .col2 .hover1 .txt_hover1{
+    width:215px;
+    position:absolute;
+    top:47%; left:17%;     
+    opacity: 0%;
+    font-weight: 400;
+    color:#000;
+ }
+ .col2 .hover1 .txt_hover1.fifa{
+    width:195px;
+    position:absolute;
+    top:7%; left:auto;
+    right:1%;  
+    opacity: 0%;
+    font-weight: 400;
+    color:#000;
+ }
+ .hover1:hover .txt_hover1.fifa{
+    transition:0.3s;    
+    z-index:999;
+    opacity: 100%;
+ } /** 따로 위드,위치값을 준 .fifa 클래스에 글나오게 하기 위한 것**/
+
+ .hover1 .txt_hover1 b{
+    display:block;
+    margin-bottom: 20px;
+ }
+.hover1:hover .hover1{
+    background-color: rgba(255, 255, 255, 0.9);
+ }
+ .hover1 img{
+    transition:0.3s;
+ }
+ .hover1:hover img{
+    opacity: 0.35;
+    transform: scale(1.06);    
+ }
+ .hover1:hover .txt_hover1{
+    z-index:999;
+    opacity: 100%;
+ }
+
+
+ .close{
+    position:absolute;
+    width:40px; height:40px;
+    right: 100px; 
+    top:50px; 
+    border:none;
+}
+.close span{
+    display:block;
+    width:2px; height:50px;
+    background-color: #fff;
+    position:absolute;
+    top:0; left:50%;
+}
+.close span:first-child{
+    transform:rotate(45deg);
+}
+.close span:last-child{
+    transform:rotate(-45deg);
+}
+
+#pop_up1, #pop_up2, #pop_up3, #pop_up4, #pop_up5
+, #pop_up6, #pop_up7{
+    display:none;
+    position:fixed;
+    z-index: 99999;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+#pop_wrap .pop{
+    position: relative;
+    max-width:600px;
+    top:100px;
+    left:50%;            
+    transform: translate(-50%);
+}
+#pop_wrap #pop_up3 .pop{
+    max-width:760px;
+}
+#pop_wrap #pop_up4 .pop, #pop_wrap #pop_up5 .pop{
+    max-width:450px;
+}
+#pop_wrap #pop_up6 .pop, #pop_wrap #pop_up7 .pop{
+    max-width:650px;
+}
+
+.pop img{
+    width:100%;
+}
+#pop_up6, #pop_up7{
+    height: 100%;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+
+
+ /* ***************배너************************ */
+
+.sangse_wrap{
+    display:flex;    
+    margin-left:65px;
+}
+.sangse_box{
+    display:flex;
+    margin-top:50px;
+    width:50%;
+}
+.sangse_box:first-child{   
+    margin-right:40px;
+}
+.sangse_box .img_box{
+    width: 300px;
+    height:390px;
+    overflow:hidden;
+    transition:0.3s;
+    cursor:pointer;  
+}
+.sangse_box .img_box:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.sangse_box .img_box img{
+    transition:0.3s;
+}
+.sangse_box .img_box:hover img{
+    opacity: 0.6;    
+    transform: scale(1.08);  
+}
+
+.sangse_box .txt{
+    margin-top:50px;
+    margin-left: 40px; 
+    width:calc(100% - 350px);
+}
+.sangse_box .txt p{
+    margin-top: 30px;
+}
+
+
+#contact{
+    padding-top:250px;
+    padding-bottom: 120px;
+}
+#contact .inner{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#contact h2{
+    font-size:2rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+#contact .img_box{
+    width:300px;
+}
+
+.kakao_box{    
+    width:400px; height:410px;
+    background-color: #f7f8f9;
+    text-align: center;    
+    transition: 0.25s;
+}
+.kakao_box:hover{
+    background-color: rgb(250, 250, 110);
+}
+.kakao_box .img_box{
+    margin:auto;
+    margin-top:40px;
+}
+.kakao_box .txt{
+    margin-top:20px;
+}
+
+.mail{
+    width:400px;
+    height:110px;
+    background-color: #f7f8f9;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.2s;
+}
+.mail .txt{
+    margin-top:-6px;
+    margin-left: 30px;
+    font-size:1.5rem;
+}
+#contact .mail .img_box{
+    width:45px;
+}
+.mail:hover{
+    background-color:  rgb(124, 209, 245);
+    color:#fff;
+}
+.mail .img_box span{
+   background: url('/img/noun-mail-5196108_none.png') no-repeat;
+   background-size:contain;
+   display:inline-block;
+   width:45px; height:31px;   
+   transition:0.2s;
+}
+.mail:hover span{
+    background: url('/img/noun-mail-5196108_hover.png') no-repeat;
+    background-size:contain;
+    display:inline-block;
+    width:45px; height:31px;   
+ }
+#contact h3{
+    width:400px;
+    font-size:1.2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 2rem;
+}
+#contact h3 b{
+    font-size:1.3rem;
+    display:block;
+    font-weight: 500;    
+}
+#contact h3 b em{
+    font-style: normal;
+    display:block;
+    color:rgb(17, 167, 226);
+}
+.mail_wrap{
+    margin-top:-40px;
+}
