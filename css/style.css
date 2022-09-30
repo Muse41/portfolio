@@ -213,11 +213,11 @@
     color:#565656;
 }
 #work .txt_box .txt{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 #work .txt_box .more{
     background-color: rgb(249, 250, 250);
-    padding:9px 20px;
+    padding:9px 18px;
     display:inline-block;
     position: absolute;
     right:0;
@@ -225,6 +225,28 @@
     border-radius: 30px;
     color:#666766;
     font-size:0.94rem;  
+}
+#work .txt_box .more.video{
+    background-color: rgb(249, 250, 250);
+    padding:9px 18px;
+    display:inline-block;
+    position: absolute;
+    right:115px;
+    border:1px solid #999;
+    border-radius: 30px;
+    color:#666766;
+    font-size:0.94rem; 
+}
+#work .txt_box .more.site{
+    background-color: rgb(249, 250, 250);
+    padding:9px 18px;
+    display:inline-block;
+    position: absolute;
+    right:230px;
+    border:1px solid #999;
+    border-radius: 30px;
+    color:#666766;
+    font-size:0.94rem; 
 }
 #work .txt_box .more:hover{
     background-color: rgb(57, 183, 233);
