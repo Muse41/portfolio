@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/common.css" class="css">
     <link rel="stylesheet" href="css/style.css" class="css">
 
+    <link href="js/video-js.css" rel="stylesheet"> <!--video.js=화면크기,컨트롤 등을 일관되게 나오게함-->
+    <script src="js/video.js"></script>
+
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>
     <script src="js/popup.js"></script>
@@ -51,8 +54,9 @@
     <div id="pop_up7">
         <button class="close"><span></span><span></span></button>
         <p class="pop"><img src="img/sofa_sangse.jpg" alt="팝업"></p>
-      </div>
+     </div>    
     </div>  
+
 
     <nav id="nav">
         <ul class="gnb">
@@ -73,15 +77,15 @@
       </div> 
     </div>
             <div class="box">  
+              <p class="info">본 사이트는 1920px 해상도에 최적화돼 있습니다</p>
                 <p class="img_box">
                   <!-- <img src="img/intro1.jpg" alt="intro배경"> -->
                 </p>
             </div>        
-    </section>
+    </section>       
 
     <section id="work">   
-      <div class="inner_work">
-
+      <div class="inner_work">      
         <div class="lazy slider" >
           <div>
             <article class="a1">         
@@ -99,13 +103,18 @@
                           레이아웃을 개선하고 시원하고 깔끔한 느낌으로 리뉴얼 했습니다.
                         </p>
                         <p class="more site"><a href="#none">사이트소개</a></p><!--새창: target="_blank"-->
-                        <p class="more video"><a href="#none">동영상보기</a></p><!--새창: target="_blank"-->
-                        <p class="more"><a href="https://muse41.github.io/ssaka/" target="_blank">View More</a></p><!--새창: target="_blank"-->
+                        
+                        <p class="more"><a href="https://muse41.github.io/ssaka/" target="_blank">View More</a></p>
                     </div>
-                </div><!--a1_wrap-->                      
-                <div class="img_box">
-                    <img src="img/ssakasports2.png" alt="싸카스포츠">
-                </div>               
+                </div><!--a1_wrap-->    
+
+                  <div id="video1">
+                    <video muted autoplay controls class="video-js vjs-default-skin" data-setup="{}">
+                      <!--크롬에서 autoplay를 하려면 음소거muted를 해줘야만 함-->
+                      <source src="video/ssaka_united.mp4"> <!--type는 접속한 브라우저에서 불가능한 포맷의 다운을 애초에 막음으로써 불필요한 손실방지-->   
+                    </video>
+                  </div>
+                               
               </article>
           </div>
           <div>
@@ -122,15 +131,19 @@
                         <p class="tit">프로젝트 소개</p>
                         <p class="txt">여러 가구 브랜드들을 참조하여 배너, 상세페이지 등을 새롭게 디자인해 가상의 가구브랜드 홈페이지로 제작했습니다.
                         </p>
-                        <p class="more video"><a href="#none">동영상보기</a></p><!--새창: target="_blank"-->
+                        
                         <p class="more"><a href="https://musicking42.cafe24.com/" target="_blank">View More</a></p>
                     </div>
                 </div><!--a1_wrap-->                      
-                <div class="img_box">
-                    <img src="img/cafe24.png" alt="가구브랜드">
-                </div>               
+                <div id="video1">
+                  <video muted autoplay controls loop class="video-js vjs-default-skin" data-setup="{}">
+                    <!--크롬에서 autoplay를 하려면 음소거muted를 해줘야만 함-->
+                    <source src="video/cafe24_cut.mp4"> <!--type는 접속한 브라우저에서 불가능한 포맷의 다운을 애초에 막음으로써 불필요한 손실방지-->   
+                  </video>
+                </div>            
               </article>
           </div>
+
           <div>
             <article class="a1 mobile">         
                 <div class="a1_wrap">
@@ -145,8 +158,8 @@
                         <p class="tit">프로젝트 소개</p>
                         <p class="txt">태블릿메뉴판에서 착안하여 스마트폰으로 메뉴를 보고 주문하는 모바일메뉴판 앱 디자인입니다.
                         </p>
-                        <p class="more video"><a href="#none">동영상보기</a></p><!--새창: target="_blank"-->
-                        <p class="more"><a href="#none">준비중</a></p>
+                        <p class="more" id="proto"><a href="https://www.figma.com/proto/4Rw8v6lgTxr75nKlQDGAcW/%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%A9%94%EB%89%B4%ED%8C%90?page-id=0%3A1&node-id=1%3A2&viewport=178%2C391%2C0.62&scaling=scale-down&starting-point-node-id=1%3A2" target="_blank">프로토타입</a></p>
+                        <p class="more" id="mobile_menu"><a href="#none">소개페이지</a></p>
                     </div>
                 </div><!--a1_wrap-->      
               <div class="img_wrap">                

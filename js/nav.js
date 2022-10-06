@@ -53,7 +53,8 @@ $(document).ready(function() {//실행틀 시작
                 lazyLoad: 'ondemand', // ondemand progressive anticipated
                 infinite: true,
                 dots : true,
-                speed:500,
+                speed:300,
+                fade:true,
               });
 
 

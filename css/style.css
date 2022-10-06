@@ -1,5 +1,5 @@
 .inner_work{
-    max-width:1550px;
+    max-width:1650px;
     margin:0 auto;
     position:relative;
 }
@@ -26,51 +26,48 @@
 }
 
 /* **********내비*********** */
-
-.a1{
-    padding:0 20px;
-}
 .lazy{
     margin-bottom: 120px;
 }
 
 .slick-arrow{    
     font-size:0;
-    width:26px;
-    height:26px;
+    width:100px;
+    height: 50px;
     border:none;    
-    z-index:99;  
+    z-index:99; 
+    left:520px;  
 }
 .slick-prev{
-    background: url('../img/noun-angle-left-2437910.png') no-repeat;
+    background: url('../img/arrow_left3.png') no-repeat;
     background-size: contain;
     position:absolute;
-    top:150px;
-    left:550px;       
+    top:150px;          
 }
 .slick-next{
-    background: url('../img/noun-angle-right-2437909.png') no-repeat;
+    background: url('../img/arrow_right4.png') no-repeat;
     background-size: contain;
     position:absolute;
-    top:150px;
-    left:605px; 
+    top:185px;
 }
 
 .slick-dots{
     position: absolute;
-    top:100px;
-    left:560px;  
-    display:flex;    
+    top:120px;
+    left:545px;  
+    display:flex;
 }
 .slick-dots li button{
-    margin-right: 16px;
+    margin-right: 20px;
     border:none;   
-    font-size: 1.15rem;
-    color:#666;
+    color:#999;
+    height:28px;
+    padding-bottom: 10px;
+    font-size: 0.98rem;     
 }
 .slick-dots li.slick-active button{
-    color: #1d64c0;
-    border-bottom: 1px solid #1d64c0;
+    border-bottom: 1px solid #333;  
+    color:#313131;  
 }
 
 
@@ -100,7 +97,13 @@
     color:#fff;
     left:50%;            
     transform: translate(-50%);
-    cursor:default;
+}
+#intro .box .info{
+    position:absolute;
+    left:5px;
+    bottom: 5px;
+    font-weight: 300;
+    color:#dcdcdc;
 }
 #intro h1{
     font-size:4rem;
@@ -145,9 +148,6 @@
 #work{
     padding-top:150px;
 }
-#work article{
-    margin-bottom: 10px;
-}
 #work article.a4{
     margin-bottom: 0px;
 }
@@ -162,37 +162,42 @@
     top:120px;
     letter-spacing: 0.7em;
 }
-.big_tit .paser{
-    position:absolute;
-    right:95px;
-    top:160px;
-    letter-spacing: 0.5em;
-    font-weight: 400;
-    font-size: 1.8rem;
-}
+
 .big_tit .num{
     font-size:5rem;
     font-weight: 400;
-    color:rgba(56, 55, 55, 0.1);
+    color:rgba(77, 76, 76, 0.1);
+    margin-top:-10px;
 }
 .big_tit .txt{
     position:absolute;
-    top:60px;  left:100px;
-    font-size:2.3rem;
+    top:50px;  left:90px;
+    font-size:3rem;
     font-weight:500;
     color:#444;
-    line-height: 2.7rem;
+    line-height: 3.3rem;
 }
 .big_tit .txt b{
     display:block;
     font-weight:500;
 }
+
+#video1{
+    width:940px; 
+    height:510px;
+    overflow:hidden;     
+}
+video{
+    width:100%;
+}
+
+
 #work .a1 .a1_wrap{
     position:relative;
-    width:calc(100% - 800px);
+    width:calc(100% - 940px);
 }
 #work .txt_box{
-    width:425px;    
+    width:390px;    
     position:absolute;
     right:100px;
     bottom:80px;
@@ -200,21 +205,23 @@
 }
 .work_percent{
     margin-bottom: 30px;
+    color:#555;
 }
 .work_percent span{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2rem;
     margin-right: 10px;
-    color:#565656;
+    color:#333;
 }
 #work .txt_box .tit{
-    font-weight: 500;
+    font-weight: 400;
     font-size:1.2rem;
     margin-bottom: 15px;
-    color:#565656;
+    color:#333;
 }
 #work .txt_box .txt{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    color:#555;
 }
 #work .txt_box .more{
     background-color: rgb(249, 250, 250);
@@ -222,34 +229,29 @@
     display:inline-block;
     position: absolute;
     right:0;
-    border:1px solid #999;
+    border:1px solid #ccc;
     border-radius: 30px;
-    color:#666766;
+    color:#777;
     font-size:0.94rem;  
 }
-#work .txt_box .more.video{
-    background-color: rgb(249, 250, 250);
-    padding:9px 18px;
-    display:inline-block;
-    position: absolute;
-    right:115px;
-    border:1px solid #999;
-    border-radius: 30px;
-    color:#666766;
-    font-size:0.94rem; 
+#work .txt_box .more#mobile_menu{
+    display:none;
 }
 #work .txt_box .more.site{
-    background-color: rgb(249, 250, 250);
-    padding:9px 18px;
-    display:inline-block;
-    position: absolute;
-    right:230px;
-    border:1px solid #999;
-    border-radius: 30px;
-    color:#666766;
-    font-size:0.94rem; 
+    right:115px;
+    display:none;
+}
+#work .txt_box .more#proto{
+    right:0px;
+    cursor: pointer;
 }
 #work .txt_box .more:hover{
+    background-color: rgb(57, 183, 233);
+    border:none;
+    transition:0.2s;   
+    color:#fff;
+}
+#work .txt_box #video.more:hover, #work .txt_box .more#video2:hover{
     background-color: rgb(57, 183, 233);
     border:none;
     transition:0.2s;   
@@ -269,6 +271,7 @@ article.mobile .img_box.img1{
 }
 article.mobile .img_box.img2{
     padding-top:20px;
+    padding-bottom: 5px;
 }
 .mobile .img_wrap{
     display: flex;
@@ -381,10 +384,10 @@ article.mobile .img_box.img2{
 
 
  .close{
-    position:absolute;
+    position:fixed;
     width:40px; height:40px;
-    right: 100px; 
-    top:50px; 
+    right: 150px; 
+    top: 50px; 
     border:none;
 }
 .close span{
@@ -543,14 +546,14 @@ article.mobile .img_box.img2{
     color:#fff;
 }
 .mail .img_box span{
-   background: url('../img/noun-mail-5196108_none.png') no-repeat;
+   background: url('/img/noun-mail-5196108_none.png') no-repeat;
    background-size:contain;
    display:inline-block;
    width:45px; height:31px;   
    transition:0.2s;
 }
 .mail:hover span{
-    background: url('../img/noun-mail-5196108_hover.png') no-repeat;
+    background: url('/img/noun-mail-5196108_hover.png') no-repeat;
     background-size:contain;
     display:inline-block;
     width:45px; height:31px;   
