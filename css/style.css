@@ -97,6 +97,7 @@
     color:#fff;
     left:50%;            
     transform: translate(-50%);
+    cursor:default;
 }
 #intro .box .info{
     position:absolute;
@@ -546,14 +547,14 @@ article.mobile .img_box.img2{
     color:#fff;
 }
 .mail .img_box span{
-   background: url('/img/noun-mail-5196108_none.png') no-repeat;
+   background: url('../img/noun-mail-5196108_none.png') no-repeat;
    background-size:contain;
    display:inline-block;
    width:45px; height:31px;   
    transition:0.2s;
 }
 .mail:hover span{
-    background: url('/img/noun-mail-5196108_hover.png') no-repeat;
+    background: url('../img/noun-mail-5196108_hover.png') no-repeat;
     background-size:contain;
     display:inline-block;
     width:45px; height:31px;   
