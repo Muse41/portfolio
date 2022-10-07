@@ -62,4 +62,13 @@
         document.getElementsByTagName('body')[0].style.overflow = 'hidden';
       })
 
+      $('#pop_up8').click(function(){
+        $('#pop_up8').fadeOut(300);
+        document.getElementsByTagName('body')[0].style.overflow = 'auto';
+      })
+      $('.more.site').click(function(){
+        $('#pop_up8').fadeIn(300);
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+      })
+
     })

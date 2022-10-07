@@ -32,7 +32,7 @@
 
 .slick-arrow{    
     font-size:0;
-    width:100px;
+    width: 100px;
     height: 50px;
     border:none;    
     z-index:99; 
@@ -240,7 +240,7 @@ video{
 }
 #work .txt_box .more.site{
     right:115px;
-    display:none;
+    cursor: pointer;
 }
 #work .txt_box .more#proto{
     right:0px;
@@ -406,7 +406,7 @@ article.mobile .img_box.img2{
 }
 
 #pop_up1, #pop_up2, #pop_up3, #pop_up4, #pop_up5
-, #pop_up6, #pop_up7{
+, #pop_up6, #pop_up7, #pop_up8{
     display:none;
     position:fixed;
     z-index: 99999;
@@ -433,15 +433,17 @@ article.mobile .img_box.img2{
     max-width:650px;
 }
 
+#pop_wrap #pop_up8 .pop{
+    max-width:1300px;
+}
 .pop img{
     width:100%;
 }
-#pop_up6, #pop_up7{
+#pop_up6, #pop_up7, #pop_up8{
     height: 100%;
     overflow-y:auto;
     overflow-x: hidden;
 }
-
 
 
  /* ***************배너************************ */
