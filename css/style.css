@@ -154,7 +154,7 @@
 }
 .big_tit{
     display:flex;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     position:relative;
 }
 .big_tit .dot{
@@ -322,7 +322,7 @@ article.mobile .img_box.img2{
     margin-top:70px;
 }
 .dg_tit{
-    margin-top:80px;
+    margin-top:40px;
     margin-left:95px;
     font-weight: 400;
     font-size:21px;
